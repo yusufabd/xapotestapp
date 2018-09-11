@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/standardPadding"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TitleStyle"
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvStars"
+        tools:text="free-programming-books-zh_CN"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SubtitleStyle"
+        android:id="@+id/tvAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallMargin"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="by justjavac"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/SubtitleStyle"
+        android:id="@+id/tvStars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:drawablePadding="@dimen/extraSmallPadding"
+        android:drawableStart="@drawable/ic_star_orange_500_24dp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="38.4"/>
+
+</android.support.constraint.ConstraintLayout>

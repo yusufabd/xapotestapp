@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/standardPadding"
+    tools:context=".activity.repoDetails.DetailsActivity">
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/TitleStyle"
+        android:id="@+id/tvTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="free-programming-books-zh_CN"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/DetailsStyle"
+        android:id="@+id/tvDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        tools:text="Description: desc"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/DetailsStyle"
+        android:id="@+id/tvAuthor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvDescription"
+        tools:text="Author: authorname"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/DetailsStyle"
+        android:id="@+id/tvLanguage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/ivAvatar"
+        app:layout_constraintTop_toBottomOf="@id/tvAuthor"
+        tools:text="Language: Java"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        style="@style/DetailsStyle"
+        android:id="@+id/tvHomepage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvLanguage"
+        tools:text="Homepage: url"/>
+
+    <android.support.v7.widget.AppCompatImageView
+        android:id="@+id/ivAvatar"
+        android:layout_width="@dimen/imageSize"
+        android:layout_height="@dimen/imageSize"
+        android:layout_marginTop="@dimen/smallMargin"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"/>
+
+</android.support.constraint.ConstraintLayout>

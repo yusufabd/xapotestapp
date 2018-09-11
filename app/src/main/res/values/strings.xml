@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">XapoTestApp</string>
+    <string name="by">by %s</string>
+    <string name="author">Author: %s</string>
+    <string name="homepage">Homepage: %s</string>
+    <string name="language">Language: %s</string>
+    <string name="description">Description: %s</string>
+</resources>
